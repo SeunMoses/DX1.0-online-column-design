@@ -1,0 +1,32 @@
+/* basic syntax // css acceleration */
+/* selector {property:value}*/
+/* select by tag, ID, classes*/
+/* internal, inline, external
+h1{
+  color: orange;
+  border : 1px solid black; /* block level element and inline level element*/
+ /* display: inline;}*/
+/* css selection by classes */ 
+.{
+   margin: 0;
+}
+.parent-container {
+  border: 1px solid black;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.first-div{
+  border: 3px solid #d9d9d9d9;
+height:100% ;
+width: 50%;
+background: #d9d9d9d9;
+}
+.second-div{
+  border: 1px solid tomato;
+height:100% ;
+width: 50%;
+background: tomato;
+}
