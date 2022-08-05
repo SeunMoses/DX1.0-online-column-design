@@ -7,26 +7,194 @@ h1{
   border : 1px solid black; /* block level element and inline level element*/
  /* display: inline;}*/
 /* css selection by classes */ 
-.{
+*{
    margin: 0;
+   box-sizing: border-box;
+}
+body{
+  font-family: 'Inter',   sans-serif;
 }
 .parent-container {
-  border: 1px solid black;
+  /*border: 1px solid #d9d9d9;*/
+
   height: 400px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .first-div{
-  border: 3px solid #d9d9d9d9;
+  border: 3px solid #d9d9d9;
 height:100% ;
 width: 50%;
 background: #d9d9d9d9;
+/* padding Top Bottom left right, margin, padding, border are called box model*/
+padding: 20px 20px 20px 20px;
 }
 .second-div{
+  display: flex;
   border: 1px solid tomato;
 height:100% ;
 width: 50%;
-background: tomato;
+background: url(./images/image1.jpg);
+/*background-size: cover;*/
+background-repeat: no-repeat;
+/*background-position: bottom left;*/
+/*first property horizontal, second property vertical;*/
+background-position: bottom left;
+background-size: cover;
+position: relative;
+}
+.headerwriteup{
+  color: tomato;
+}
+.smartline{
+  height: 16px;
+  width: 224px;
+  background: tomato;
+}
+.projectlogoname{
+  margin-bottom: 30px;
+}
+.mainheadertext{
+  margin-bottom: 30px;
+}
+p{
+  margin-bottom: 40px;
+}
+.headerlinkholder{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 3;
+  width: 100%;
+}
+.backgroundoverlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 99, 71, 0.2);
+  position: absolute;
+  top :0;
+  right:  0;
+  z-index: 1;}
+  .middlecontentholder{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+/*middle section*/
+.middlediv-left{
+  background: #d9d9d9d9;
+  width: 300px;
+  height: 400px;
+  padding: 25px;
+}
+.middlediv-right{
+/*border: 2px solid black;*/
+height: 460px;
+width: 320px;
+margin-left: 20px;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+p{
+  margin: 10px 0
+}
+.middlediv-heading{
+  margin-bottom: 20px;
+}
+.third-section{
+  display:flex;
+  justify-content: center;
+  margin-top: 50px;
+  background: #d9d9d9;
+  padding: 40px 0;
+}
+.thirdsection-leftdiv,
+.thirdsection-rightdiv{
+  width: 330px;
+  height: 430px;
+}
+.thirdsection-leftdiv{
+  background: #d9d9d9;
+}
+.thirdsection-rightdiv{
+  background: #ff6347;
+  /*top right, bottom, left   clockwise direction*/
+  padding: 15px 25px 15px 25px;
+}
+.footer{
+  background: #ff6347;
+  color: white;
+  padding: 20px 0;
+  display:flex;
+  justify-content: space-evenly;
+}
+  /*css cpmbinators*/
+
+/*.footer-icon svg {
+  font-size: 25px;
+  width: 20px;
+}*/
+.footer-iconholder{
+  /*border: 3px solid black;*/
+  width: 200px;
+  text-align: center;
+}
+.iconholder svg {
+  width: 20px;
+  height: 20px;
+  fill:white;
+  /*svgs have special property*/
+}
+@media screen (max-width:900px) {
+.parent-container
+  height: 520px;
+}
+.mainheadertext{
+  font-size: 30px;
+}
+.first-div{
+  width: 60%;
+}
+.second-div{
+  width: 40%;
+}
+.smartline{
+  width: 200px;
+}
+.headerlinkholder{
+  flex-direction: column;
+  /*border: 3px solid black;*/
+  justify-content: flex-start;
+  padding-top: 40px;
+  padding: 40px;
+}
+.headerlinkholder h4 {
+  margin-bottom: 20px;
+}
+.middlecontentholder{
+  flex-direction: column;
+}
+.middlediv-right{
+  margin: 0;
+}
+.middlediv-left{
+  margin-bottom: 30px;
+}
+.third-section{
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.thirdsection-leftdiv{
+  margin-top: 30px;
+}
+footer{
+
+  flex-direction: column;
+  align-items: center;
 }
